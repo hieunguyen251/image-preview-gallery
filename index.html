@@ -7,10 +7,22 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <div id="image">Hover over an image below to display here.</div>
+  <h1>Interactive Photo Preview Gallery</h1>
 
-  <img class="preview" src="images/image1.jpg" alt="Sunset over mountains" onmouseover="upDate(this)" onmouseout="undo()">
-  <img class="preview" src="images/image2.jpg" alt="City skyline at night" onmouseover="upDate(this)" onmouseout="undo()">
-  <img class="preview" src="images/image3.jpg" alt="Forest trail in autumn" onmouseover="upDate(this)" onmouseout="undo()">
+  <main>
+    <div id="image">Hover over an image below to display here.</div>
+
+    <img class="preview" src="images/image1.jpg" alt="Sunset over mountains"
+         onmouseover="upDate(this)" onmouseout="undo()"
+         onfocus="upDate(this)" onblur="undo()" tabindex="0">
+
+    <img class="preview" src="images/image2.jpg" alt="City skyline at night"
+         onmouseover="upDate(this)" onmouseout="undo()"
+         onfocus="upDate(this)" onblur="undo()" tabindex="0">
+
+    <img class="preview" src="images/image3.jpg" alt="Forest trail in autumn"
+         onmouseover="upDate(this)" onmouseout="undo()"
+         onfocus="upDate(this)" onblur="undo()" tabindex="0">
+  </main>
 </body>
 </html>
